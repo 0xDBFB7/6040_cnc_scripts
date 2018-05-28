@@ -2,7 +2,7 @@ This is a LinuxCNC 2.7 config for 6040 series CNCs.
 
 It assumes that you have limit switches on all axis, all of which are connected in parallel to one of the inputs. If your CNC doesn't have the input pins broken out, you can buy a 5-position JST-XH 2.5mm plug and connect it to the parallel port breakout:
 
-![alt text](/breakout-jst.jpg)
+![alt text](breakout-jst.jpg)
 
 I spent a while looking for a touch probe system to use on these machines, but I couldn't really find anything that suited my needs. All the homemade stuff generally has concentricity issues etc. 
 
