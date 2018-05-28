@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "F$2\n" > /dev/ttyACM0
+sleep 0.1
+echo "G$1\n" > /dev/ttyACM0
+sleep $(($1/5))

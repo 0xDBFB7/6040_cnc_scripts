@@ -1,0 +1,27 @@
+%
+G90
+G64 P0.005
+G54
+M06 T1
+#<probe> = [5.97/2.0]
+G10 L2 P1 X0 Y0 Z0
+#<initial_z> = #<_z>
+G38.5 X[#<_x>+30] F40
+G10 L2 P1 X[#<_x>+#<probe>]
+G00 Z[#<_z>+20]
+G00 X0
+G00 Z[#<initial_z>+30]
+G00 Y[#<_y>-50] X[#<_x>+70]
+G00 Z#<initial_z>
+G38.5 Y[#<_y>+30] F40
+G10 L2 P1 Y[#<_y>+#<probe>]
+G00 Z[#<_z>+20]
+G00 Y0
+G00 Z[#<initial_z>+30]
+G00 Y[#<_y>+#<probe>]
+G00 Z[#<initial_z>+20]
+G38.5 Z[#<initial_z>-30] F40
+G28.1
+G10 L2 P1 Z#5163
+G00 Z[#<_z>+20]
+%
